@@ -1,10 +1,10 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
-
 .svg-icon {
     width: 1.5em;
     height: 1em;
@@ -24,7 +24,6 @@ SVG Icons - svgicons.sparkk.fr
   /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
-
 .svg-icon {
     width: 1.5em;
     height: 1em;
