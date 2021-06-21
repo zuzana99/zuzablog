@@ -1,0 +1,17 @@
+<head>
+  <title>zuzablog</title>
+  <link href="https://pl.allfont.net/allfont.css?fonts=liberation-sans" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.typekit.net/ltf5iuj.css" />
+  <link rel="stylesheet" href="/icons/elegant-icons/style.css" />
+
+  {{ $styles := resources.Get "css/main.css" | postCSS }}
+  {{ if .Site.IsServer }}
+  <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+  {{ else }} {{ $styles := $styles | minify | fingerprint | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" />
+  {{ end }}
+</head>

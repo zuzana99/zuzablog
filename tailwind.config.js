@@ -1,13 +1,13 @@
 module.exports = {
   purge: [
-    './src/index.html',
-    './src/styles.css'
+    './**/*.html',
+    './**/*.css'
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Quicsand','arial'],
+        'sans': ['Quicsand', 'arial'],
         'serif': ['adobe-garamond-pro']
       }
     }
