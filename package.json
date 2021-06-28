@@ -4,13 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "hugo serve -s src -D"
+    "start": "concurrently \"npm run hugo\" \"npm run js\"",
+    "hugo": "hugo serve -s src -D",
+    "js": "esbuild src/assets/js/src/index.ts --outfile=src/assets/js/dist/main.js --watch --bundle"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^10.2.5",
+    "concurrently": "^6.2.0",
+    "esbuild": "^0.12.11",
     "hugo-bin": "^0.71.1",
     "postcss": "^8.3.5",
     "postcss-cli": "^8.3.1",

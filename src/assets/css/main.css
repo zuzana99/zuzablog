@@ -2,40 +2,40 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+.vertical-align-top {
+  vertical-align: top;
+}
+
 /* -----
 SVG Icons - svgicons.sparkk.fr
 ----- */
 .svg-icon {
-    width: 1.5em;
-    height: 1em;
-  }
-  
-  .svg-icon path,
-  .svg-icon polygon,
-  .svg-icon rect {
-    fill: #4691f6;
-  }
-  
-  .svg-icon circle {
-    stroke: #4691f6;
-    stroke-width: 1;
-  }
+  width: 1.5em;
+  height: 1em;
+}
 
-  /* -----
-SVG Icons - svgicons.sparkk.fr
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+/* -----
+Text reveal
 ----- */
-.svg-icon {
-    width: 1.5em;
-    height: 1em;
-  }
-  
-  .svg-icon path,
-  .svg-icon polygon,
-  .svg-icon rect {
-    fill: #4691f6;
-  }
-  
-  .svg-icon circle {
-    stroke: #4691f6;
-    stroke-width: 1;
-  }
+
+.text-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-duration: 0.5s;
+}
+
+.text-reveal-show {
+  opacity: 1;
+  transform: translateY(1px);
+}
