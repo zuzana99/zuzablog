@@ -31859,24 +31859,8 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
-/* -----
-SVG Icons - svgicons.sparkk.fr
------ */
-
-.svg-icon {
-  width: 1.5em;
-  height: 1em;
-}
-
-.svg-icon path,
-  .svg-icon polygon,
-  .svg-icon rect {
-  fill: #4691f6;
-}
-
-.svg-icon circle {
-  stroke: #4691f6;
-  stroke-width: 1;
+.vertical-align-top {
+  vertical-align: top;
 }
 
 /* -----
@@ -31889,14 +31873,29 @@ SVG Icons - svgicons.sparkk.fr
 }
 
 .svg-icon path,
-  .svg-icon polygon,
-  .svg-icon rect {
+.svg-icon polygon,
+.svg-icon rect {
   fill: #4691f6;
 }
 
 .svg-icon circle {
   stroke: #4691f6;
   stroke-width: 1;
+}
+
+/* -----
+Text reveal
+----- */
+
+.text-reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition-duration: 0.5s;
+}
+
+.text-reveal-show {
+  opacity: 1;
+  transform: translateY(1px);
 }
 
 @media (min-width: 640px) {

@@ -9,7 +9,7 @@
     </div>
     {{- partial "footer.html" . -}}
 
-    {{ $js := resources.Get "js/dist.js" }}
+    {{ $js := resources.Get "js/dist/main.js" }}
     <script src="{{ $js.RelPermalink }}"></script>
 </body>
 

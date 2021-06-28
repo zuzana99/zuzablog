@@ -6,7 +6,7 @@
   "scripts": {
     "start": "concurrently \"npm run hugo\" \"npm run js\"",
     "hugo": "hugo serve -s src -D",
-    "js": "esbuild src/assets/js/src/index.ts --outfile=src/assets/js/dist.js --watch --bundle"
+    "js": "esbuild src/assets/js/src/index.ts --outfile=src/assets/js/dist/main.js --watch --bundle"
   },
   "keywords": [],
   "author": "",

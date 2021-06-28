@@ -1,0 +1,10 @@
+{{ $words := split .Text " " }}
+<h2 class="font-serif text-xl my-3 text-left">
+	{{ range $index, $word := $words }}
+	{{ $delay := add 200 (mul $index 10) }}
+	<span class="inline-block overflow-hidden vertical-align-top">
+		<span class="text-reveal inline-block transition-all ease-out"
+			style="transition-delay: {{ $delay }}ms;">{{ $word }}</span>
+	</span>
+	{{ end }}
+</h2>
