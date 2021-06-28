@@ -31859,6 +31859,11 @@ video {
   --tw-backdrop-sepia: sepia(100%);
 }
 
+html,
+body {
+  height: 100%;
+}
+
 .vertical-align-top {
   vertical-align: top;
 }
