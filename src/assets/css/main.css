@@ -31,11 +31,22 @@ Text reveal
 
 .text-reveal {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(100%);
   transition-duration: 0.5s;
 }
 
 .text-reveal-show {
   opacity: 1;
   transform: translateY(1px);
+}
+
+.image-reveal {
+  opacity: 0;
+  transition: opacity 0.2s;
+  transition-duration: 0.3s;
+  transition-delay: 200ms;
+}
+
+.image-reveal-show {
+  opacity: 1;
 }
