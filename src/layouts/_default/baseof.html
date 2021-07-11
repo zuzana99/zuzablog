@@ -3,18 +3,21 @@
 {{- partial "head.html" . -}}
 
 <body>
-    <div class="flex flex-col justify-between h-full">
-        <div>
+    <div class="flex flex-col h-full">
+        <div class="">
             {{- partial "header.html" . -}}
         </div>
-        <div class="h-full">
+        <div class="flex-grow flex-shrink-0">
             {{- block "main" . }}{{- end }}
         </div>
-        {{- partial "footer.html" . -}}
+        <div class="flex-shrink-0">
+            {{- partial "footer.html" . -}}
+        </div>
     </div>
 
     {{ $js := resources.Get "js/dist/main.js" }}
-    <script src="{{ $js.RelPermalink }}"></script>
+    <script src=" {{ $js.RelPermalink }}">
+    </script>
 </body>
 
 </html>
